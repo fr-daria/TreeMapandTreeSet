@@ -11,7 +11,7 @@ public class Main {
         list.add(new Person("Борис", "Дояркин", 56));
         list.add(new Person("Ларса", "Шевцова", 48));
 
-        Collections.sort(list, new PersonComparator(1));
+        Collections.sort(list, new PersonComparator(3));
         System.out.println(list);
     }
 }
