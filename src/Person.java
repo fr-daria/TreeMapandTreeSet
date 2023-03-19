@@ -9,24 +9,8 @@ public class Person {
         this.age = age;
     }
 
-    public void setName() {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setSurname() {
-        this.surname = surname;
-    }
-
     public String getSurname() {
         return surname;
-    }
-
-    public void setAge() {
-        this.age = age;
     }
 
     public int getAge() {
