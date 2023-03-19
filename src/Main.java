@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -11,7 +12,7 @@ public class Main {
         list.add(new Person("Борис", "Дояркин", 56));
         list.add(new Person("Ларса", "Шевцова", 48));
 
-        Collections.sort(list, new PersonComparator(3));
+        Collections.sort(list, Comparator.comparingInt(o -> o.getSurname().length()));
         System.out.println(list);
     }
 }
